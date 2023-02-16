@@ -38,7 +38,8 @@ function SideBar () {
 
         <img onClick={() => signOut()}
         className='rounded-full cursor-pointer h-10 w-10 ml-2 mx-auto mb-2 hover:opacity-25' 
-        src={session?.user?.image} alt='' />
+        src={session?.user?.image || 'https://ui-avatars.com/api/?name${session?.user?.name!' } 
+        alt='' />
 
     )}
     

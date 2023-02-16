@@ -13,10 +13,10 @@ export default function Homepage() {
             </div>
 
             <div className='space-y-2'>
-            <p className='infoText font-semibold'>"Grammar Check"</p>
-            <p className='infoText font-semibold'>"Spelling Check"</p>
-            <p className='infoText font-semibold'>"Resume Outline"</p>
-            <p className='infoText font-semibold'> "Chat Guidance"</p>
+            <p className='infoText font-semibold animate-bounce'>"Grammar Check"</p>
+            <p className='infoText font-semibold animate-bounce'>"Spelling Check"</p>
+            <p className='infoText font-semibold animate-bounce'>"Resume Outline"</p>
+            <p className='infoText font-semibold animate-bounce'> "Chat Guidance"</p>
             </div>
             
         </div>

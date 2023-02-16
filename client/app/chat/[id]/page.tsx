@@ -1,8 +1,9 @@
+'use client'
 
 import Chat from "../../../components/Chat";
 import ChatInput from "../../../components/ChatInput";
-import ResumeInput from "../../../components/ResumeInput";
-import ResumeResponse from "../../../components/ResumeResponse";
+import FileInput from "../../../components/FileInput";
+import ResumeDetails from "../../../components/ResumeDetails";
 import Suggestions from "../../../components/Suggestions";
 
   type Props = {
@@ -14,9 +15,9 @@ import Suggestions from "../../../components/Suggestions";
  function ChatPage({ params: { id } }: Props) {
   return <div className="flex flex-col h-screen overflow-hidden">
 
-    <ResumeInput />
+    <FileInput />
 
-    <ResumeResponse />
+    <ResumeDetails cvData={undefined} />
 
     <Suggestions />
 

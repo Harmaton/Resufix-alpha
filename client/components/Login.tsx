@@ -2,6 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { signIn } from 'next-auth/react';
+import { FaceSmileIcon } from '@heroicons/react/24/outline';
 
 
 
@@ -9,8 +10,22 @@ import { signIn } from 'next-auth/react';
  function Login() {
       
   return (
+
+    <>
+    <div className=' bg-blue-200 '>
+    <FaceSmileIcon className='p-4 h-20' />
+    <h1 className='font-bold p-4 '>ResuFix</h1>
+    
+
+    <div className='flex flex-col md:flex-row lg:flex-row p-5 bg-blue-500'>
+
+      </div>
+
+    </div>
+   
    
      <div className='flex flex-col md:flex-row lg:flex-row p-5 bg-blue-500'>
+      
       
       <div className='p-4 items-center lg:mt-10'>
       <h1 className=' text-6xl font-bold p-4 bg-linear tracking-wide animate-pulse'>Maximizing the Potential of Your Resume for Optimal Results</h1>
@@ -36,6 +51,7 @@ import { signIn } from 'next-auth/react';
       </div>
 
       </div>
+      </>
 
   );
 }
