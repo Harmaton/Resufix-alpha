@@ -13,11 +13,12 @@ def processCv():
         resume.save(resume)
         #parse the file
         data = ResumeParser(resume).get_extracted_data()
-
         return jsonify(data)
-    except:
-        return "Error"
+    
+    except Exception as e:
+        return jsonify({"error": str(e)})
     
     
 if __name__ == '__main__':
     app.run(debug=True)
+
