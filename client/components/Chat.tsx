@@ -18,7 +18,7 @@ export default function Chat({chatId}: Props) {
     session && 
     query(
      collection(db, 'users', session?.user?.email!, 'chats', chatId, 'messages'),
-    orderBy('createdAt', 'asc'),
+      orderBy('createdAt', 'asc'),
   ));
 
   return (
