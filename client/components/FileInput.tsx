@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 
 const FileInput = () => {
 
+
+
     const [file, setFile] = useState<File | null>(null);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -23,7 +25,7 @@ const FileInput = () => {
        <span className='font-light text-center animate-pulse'>"only PDF || WORD accepted"</span>
       </label>
       {file && (
-        <p className="text-gray-700 mt-3">
+        <p className="text-red text-gray-700 mt-3">
           {file.name} ({file.size / 1024 / 1024} MB)
         </p>
       )}
