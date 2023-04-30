@@ -1,5 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { classificationsReducer } from "@/slices/analysisSlice";
+import { classificationsReducer } from "./slices/analysisSlice";
 
 const store = configureStore({
   reducer: {
